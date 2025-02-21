@@ -3,6 +3,7 @@
   <project name="AndyCGYan/android_device_lineage_gsi" path="device/lineage/gsi" remote="github" revision="lineage-21" />
   <project name="AndyCGYan/android_packages_apps_QcRilAm" path="packages/apps/QcRilAm" remote="github" revision="master" />
   <project name="TrebleDroid/vendor_hardware_overlay" path="vendor/hardware_overlay" remote="github" revision="pie" />
+  <project path="vendor/partner_gms" name="lineageos4microg/android_vendor_partner_gms" remote="github" revision="master" />
   <remove-project name="LineageOS/android_packages_apps_Camera2" />
   <remote name="gitlab" fetch="https://gitlab.com/" />
   <project name="MindTheGapps/vendor_gapps" path="vendor/gapps" remote="gitlab" revision="upsilon" />
