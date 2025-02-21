@@ -5,7 +5,7 @@ Set up your environment by referring to [LineageOS Wiki](https://wiki.lineageos.
 
 Create a new working directory for your LineageOS build and navigate to it:
 
-    mkdir lineage-21-build-gsi; cd lineage-21-build-gsi
+    mkdir lineage-21-build-light; cd lineage-21-build-light
 
 Initialize your LineageOS workspace:
 
@@ -13,7 +13,7 @@ Initialize your LineageOS workspace:
 
 Clone both this and the patches repos:
 
-    git clone https://github.com/AndyCGYan/lineage_build_unified lineage_build_unified -b lineage-21-light
+    git clone https://github.com/clewisit/lineage_build_unified lineage_build_unified -b lineage-21-light
     git clone https://github.com/AndyCGYan/lineage_patches_unified lineage_patches_unified -b lineage-21-light
 
 Finally, start the build script - for example, to build for all supported archs:
