@@ -107,6 +107,7 @@ build_treble() {
         ("64VN") TARGET=gsi_arm64_vN;;
         ("64VS") TARGET=gsi_arm64_vS;;
         ("64GN") TARGET=gsi_arm64_gN;;
+        ("64FN") TARGET=gsi_arm64_fN;;
         (*) echo "Invalid target - exiting"; exit 1;;
     esac
     lunch lineage_${TARGET}-${aosp_target_release}-userdebug
