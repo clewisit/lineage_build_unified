@@ -114,7 +114,7 @@ build_treble() {
     make installclean
     WITH_ADB_INSECURE=true make -j$(lscpu -b -p=Core,Socket | grep -v '^#' | sort -u | wc -l) systemimage
     SIGNED=false
-    if [ ${SIGNABLE} = true ] && [[ ${TARGET} == *_g? ]]
+    if [ ${SIGNABLE} = true ] # && [[ ${TARGET} == *_g? ]]
     then
         WITH_ADB_INSECURE=true make -j$(lscpu -b -p=Core,Socket | grep -v '^#' | sort -u | wc -l) target-files-package otatools
         bash ./lineage_build_unified/sign_target_files.sh $OUT/signed-target_files.zip
