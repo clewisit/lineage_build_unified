@@ -64,6 +64,9 @@ prep_build() {
     repo sync -c --force-sync --no-clone-bundle --no-tags -j$(nproc --all)
     echo ""
 
+    echo "Adding _fN target"
+    cp ./lineage_build_unified/device_lineage_gsi/*.mk ./device/lineage/gsi/
+
     echo "Setting up build environment"
     source build/envsetup.sh &> /dev/null
     source vendor/lineage/vars/aosp_target_release
